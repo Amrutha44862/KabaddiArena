@@ -1,0 +1,7 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center" android:padding="24dp" android:background="#1A1A2E">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🏆" android:textSize="64sp" android:layout_marginBottom="16dp"/>
+    <TextView android:id="@+id/tvWelcome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Welcome!" android:textSize="26sp" android:textStyle="bold" android:textColor="#FFD700" android:layout_marginBottom="8dp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="KABADDI ARENA" android:textSize="18sp" android:textColor="#FFFFFF" android:layout_marginBottom="48dp"/>
+    <Button android:id="@+id/btnStartMatch" android:layout_width="match_parent" android:layout_height="60dp" android:text="⚡ START MATCH" android:textSize="18sp" android:textStyle="bold" android:backgroundTint="#FFD700" android:textColor="#1A1A2E" android:layout_marginBottom="16dp"/>
+    <Button android:id="@+id/btnLogout" android:layout_width="match_parent" android:layout_height="56dp" android:text="LOGOUT" android:textSize="16sp" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:textColor="#FF5555"/>
+</LinearLayout>

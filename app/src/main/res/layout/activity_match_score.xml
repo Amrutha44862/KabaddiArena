@@ -1,0 +1,32 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#1A1A2E">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp" android:gravity="center">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MATCH SCORE" android:textSize="24sp" android:textStyle="bold" android:textColor="#FFD700" android:layout_marginBottom="32dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="24dp">
+            <!--  Team 1  -->
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/etTeam1Name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Team 1" android:textSize="16sp" android:textStyle="bold" android:textColor="#FFD700" android:gravity="center" android:background="@android:color/transparent" android:layout_marginBottom="8dp"/>
+                <TextView android:id="@+id/tvTeam1Score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textSize="64sp" android:textStyle="bold" android:textColor="#FFFFFF" android:layout_marginBottom="12dp"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <Button android:id="@+id/btnTeam1Minus" android:layout_width="52dp" android:layout_height="52dp" android:text="-" android:textSize="22sp" android:textStyle="bold" android:backgroundTint="#FF5555" android:layout_marginEnd="8dp"/>
+                    <Button android:id="@+id/btnTeam1Plus" android:layout_width="52dp" android:layout_height="52dp" android:text="+" android:textSize="22sp" android:textStyle="bold" android:backgroundTint="#55BB55"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!--  VS  -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="VS" android:textSize="20sp" android:textStyle="bold" android:textColor="#FFD700" android:layout_gravity="center" android:paddingHorizontal="8dp"/>
+            <!--  Team 2  -->
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/etTeam2Name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Team 2" android:textSize="16sp" android:textStyle="bold" android:textColor="#FFD700" android:gravity="center" android:background="@android:color/transparent" android:layout_marginBottom="8dp"/>
+                <TextView android:id="@+id/tvTeam2Score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textSize="64sp" android:textStyle="bold" android:textColor="#FFFFFF" android:layout_marginBottom="12dp"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <Button android:id="@+id/btnTeam2Minus" android:layout_width="52dp" android:layout_height="52dp" android:text="-" android:textSize="22sp" android:textStyle="bold" android:backgroundTint="#FF5555" android:layout_marginEnd="8dp"/>
+                    <Button android:id="@+id/btnTeam2Plus" android:layout_width="52dp" android:layout_height="52dp" android:text="+" android:textSize="22sp" android:textStyle="bold" android:backgroundTint="#55BB55"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!--  Result  -->
+        <TextView android:id="@+id/tvResult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textSize="22sp" android:textStyle="bold" android:textColor="#FFD700" android:layout_marginBottom="24dp"/>
+        <Button android:id="@+id/btnEndMatch" android:layout_width="match_parent" android:layout_height="56dp" android:text="🏆 END MATCH" android:textSize="16sp" android:textStyle="bold" android:backgroundTint="#FFD700" android:textColor="#1A1A2E" android:layout_marginBottom="12dp"/>
+        <Button android:id="@+id/btnReset" android:layout_width="match_parent" android:layout_height="56dp" android:text="🔄 RESET" android:textSize="16sp" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:textColor="#FFFFFF" android:layout_marginBottom="12dp"/>
+        <Button android:id="@+id/btnBack" android:layout_width="match_parent" android:layout_height="56dp" android:text="← BACK" android:textSize="16sp" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:textColor="#AAAAAA"/>
+    </LinearLayout>
+</ScrollView>
